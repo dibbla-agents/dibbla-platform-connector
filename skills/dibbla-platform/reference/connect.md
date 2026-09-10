@@ -3,7 +3,7 @@ This file is generated from the Dibbla connector skill source. Do not edit it by
 hand: edit the source and regenerate, or your change is gone at the next release.
 source: app-hosting-service/mcp-server/skillset/dibbla-platform
 source-version: 1.0.0
-source-digest: sha256:596c9d3da59ef8cb0e763b373c3b2e1399ecb6586cffe64baa0c7791079c8b08
+source-digest: sha256:b712061da97e82b2f5ea7725ed593241665aa788144b87d3895b881f12f78fa9
 generator: app-hosting-service/mcp-server/connectorpkg
 -->
 
@@ -108,6 +108,7 @@ it. There is no tool, parameter or header that reaches another one.
 | `platform:operations:cancel` | narrow-write, off by default | `platform_operation_cancel` |
 | `platform:workflows:delete` | destructive, off by default | `platform_destructive_execute` |
 | `platform:feedback:write` | write, off by default | `platform_feedback` |
+| `platform:tools:execute` | narrow-write, off by default | every tool on the `/platform/tools` mount — the functions the organization has exposed, listed with `platform:workflows:read` |
 
 `platform_workflow_validate` and `platform_destructive_plan` come with the read
 side of their family: validating a draft saves nothing, and planning a deletion
