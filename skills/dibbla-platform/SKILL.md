@@ -9,7 +9,7 @@ This file is generated from the Dibbla connector skill source. Do not edit it by
 hand: edit the source and regenerate, or your change is gone at the next release.
 source: app-hosting-service/mcp-server/skillset/dibbla-platform
 source-version: 1.0.0
-source-digest: sha256:dc705685f321e53738323892c3a10d340dc741bcdd2fd01644e57ba2c4cee2a1
+source-digest: sha256:596c9d3da59ef8cb0e763b373c3b2e1399ecb6586cffe64baa0c7791079c8b08
 generator: app-hosting-service/mcp-server/connectorpkg
 -->
 # Dibbla over the connector
@@ -156,39 +156,44 @@ the surfaces never drew.
 A grant that holds every scope sees exactly these. Yours may show fewer; that is
 consent, not breakage.
 
+<!-- BEGIN generated:tool-table — this table is written from the live /platform
+tool surface by `just skillset-tools`. Do not edit between the markers: rename a
+tool, add one, or change its title, run that recipe, and the table follows. A
+test in mcp-server fails while it disagrees with the surface. -->
 | Tool | What it is for |
 |---|---|
-| `platform_whoami` | Who you act as, which organization, which scopes, which other organizations exist |
-| `platform_apps` | List applications, or read one — status, URL, services, or `view=maintenance` |
-| `platform_app_card` | Show one application to the person as a card in this conversation, with a running deploy's steps |
-| `platform_app_config_update` | Non-secret env vars, replicas, cpu, memory, the maintenance setting |
-| `platform_app_restart` | Rolling restart of an application or one service |
-| `platform_app_logs` | A bounded window of an application's logs |
-| `platform_app_checks` | An application's check definitions, or `view=history` for past runs |
-| `platform_app_checks_set_enabled` | Turn the scheduled checks runtime on or off |
-| `platform_app_run` | Run the checks now, or start one maintenance-agent run |
-| `platform_files` | `glob`, `grep`, `read` an app's source; `prepare_upload`/`prepare_download` to move whole files |
-| `platform_deployment_start` | Deploy from `files`, `archive` or `source`; `mode=patch` to change part of a running app |
-| `platform_deployment_preflight` | Resolve a `dibbla.yaml` exactly as a deploy would, without deploying |
-| `platform_deployments` | Deployment history of one app, or `view=logs` for the current one |
-| `platform_deployment_proposals` | Propose a deploy from a pushed branch, follow it, approve or deny it |
-| `platform_operation` | Follow a durable operation: `status`, `events`, `logs`, `output` |
-| `platform_operation_cancel` | Stop an operation that is still running |
-| `platform_databases` | The managed databases and their lifecycle phase — metadata only |
-| `platform_database_rows_query` | At most 100 rows from one table through a server-built SELECT |
-| `platform_database_provision` | Queue a create-only database provisioning as an operation |
-| `platform_secrets` | Secret **names** and metadata, at three scopes. No tool returns a value |
-| `platform_secret_write` | Set, rotate or delete one secret |
-| `platform_storage_buckets` | The managed buckets and their quota, usage and bound deployment |
-| `platform_storage_bucket_write` | Provision a bucket, or rotate its credential |
-| `platform_workflows` | List or read workflows; `view=revisions`, `view=api` |
-| `platform_workflow_apply` | Create, replace or roll back a workflow from slim YAML |
-| `platform_workflow_validate` | Check a draft definition without saving it |
-| `platform_workflow_execute` | Start a workflow run as a durable operation |
-| `platform_catalog` | Templates, and the workflow functions and providers registered right now |
-| `platform_destructive_plan` | Preview an irreversible change and get a human approval link |
-| `platform_destructive_execute` | Carry out exactly the change a human approved |
-| `platform_feedback` | Send, read or withdraw feedback about Dibbla itself |
+| `platform_app_card` | Show the customer their app |
+| `platform_app_checks` | Read an application's checks and what they found |
+| `platform_app_checks_set_enabled` | Enable or disable an application's scheduled checks |
+| `platform_app_config_update` | Update an application's routine configuration |
+| `platform_app_logs` | Read a bounded application log window |
+| `platform_app_restart` | Restart an application or one of its services |
+| `platform_app_run` | Run something against an application now |
+| `platform_apps` | Read the applications in the granted organization |
+| `platform_catalog` | Read the platform's catalogues of building blocks |
+| `platform_database_provision` | Provision a database |
+| `platform_database_rows_query` | Read bounded database rows |
+| `platform_databases` | Read the databases in the granted organization |
+| `platform_deployment_preflight` | Check a dibbla.yaml the way a deploy would, without deploying |
+| `platform_deployment_proposals` | Propose a deployment, follow it, and decide it |
+| `platform_deployment_start` | Deploy an application from files, a source archive or a repository ref |
+| `platform_deployments` | Read an application's deployment history |
+| `platform_destructive_execute` | Carry out an irreversible change a human has approved |
+| `platform_destructive_plan` | Plan an irreversible change and get it approved by a human |
+| `platform_feedback` | Send, read or withdraw product feedback about Dibbla |
+| `platform_files` | Read an application's files, and move whole files |
+| `platform_operation` | Follow a durable operation |
+| `platform_operation_cancel` | Cancel a running operation |
+| `platform_secret_write` | Set, rotate or delete a secret |
+| `platform_secrets` | List secret names and metadata |
+| `platform_storage_bucket_write` | Provision a storage bucket or rotate its credential |
+| `platform_storage_buckets` | Read the managed storage buckets |
+| `platform_whoami` | Return the granted user and organization |
+| `platform_workflow_apply` | Create, replace or roll back a workflow |
+| `platform_workflow_execute` | Start a workflow as a durable operation |
+| `platform_workflow_validate` | Validate a workflow definition without saving it |
+| `platform_workflows` | Read the workflows in the granted organization |
+<!-- END generated:tool-table -->
 
 Each tool's own description carries its parameters and their bounds. This skill
 carries the things a tool description cannot: the order between tools, what an
