@@ -1,0 +1,46 @@
+{
+  "name": "dibbla",
+  "version": "1.0.0",
+  "description": "Deploy and operate applications on Dibbla: read the running source, patch it, deploy, follow the operation, and manage databases, storage, secrets and workflows.",
+  "author": {
+    "name": "Dibbla",
+    "email": "contact@dibbla.com",
+    "url": "https://dibbla.com"
+  },
+  "homepage": "https://dibbla.com",
+  "repository": "https://github.com/dibbla-agents/dibbla-platform-connector",
+  "license": "MIT",
+  "keywords": [
+    "dibbla",
+    "deploy",
+    "hosting",
+    "mcp",
+    "connector",
+    "platform"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Dibbla",
+    "shortDescription": "Deploy and operate your applications on Dibbla.",
+    "longDescription": "Dibbla hosts applications: their source, deployments, logs, secrets, databases, storage buckets, workflows and scheduled checks. With this plugin an assistant can read the source of the revision that is actually running, change only the files that change, deploy it, follow the build to a live URL, and manage the resources around it — all over an OAuth-protected connection that acts as one user in one organization and nowhere else.",
+    "developerName": "Dibbla",
+    "category": "Developer Tools",
+    "websiteURL": "https://dibbla.com",
+    "privacyPolicyURL": "https://dibbla.com/privacy",
+    "termsURL": "https://dibbla.com/terms",
+    "supportURL": "https://dibbla.com/support",
+    "defaultPrompt": [
+      "Which Dibbla organization am I connected as, and what can this connection do?",
+      "List my Dibbla apps and tell me which ones are not running.",
+      "Read the source of my app that is live right now and explain what it does.",
+      "Change the headline on my app and deploy it, then tell me when it is live."
+    ]
+  },
+  "metadata": {
+    "source": "app-hosting-service/mcp-server/skillset/dibbla-platform",
+    "sourceVersion": "1.0.0",
+    "sourceDigest": "sha256:dc705685f321e53738323892c3a10d340dc741bcdd2fd01644e57ba2c4cee2a1",
+    "generator": "app-hosting-service/mcp-server/connectorpkg"
+  }
+}

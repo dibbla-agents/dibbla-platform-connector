@@ -1,0 +1,27 @@
+{
+  "name": "dibbla",
+  "description": "Deploy and operate applications on Dibbla: read the running source, patch it, deploy, follow the operation, and manage databases, storage, secrets and workflows.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dibbla",
+    "email": "contact@dibbla.com",
+    "url": "https://dibbla.com"
+  },
+  "homepage": "https://dibbla.com",
+  "repository": "https://github.com/dibbla-agents/dibbla-platform-connector",
+  "license": "MIT",
+  "keywords": [
+    "dibbla",
+    "deploy",
+    "hosting",
+    "mcp",
+    "connector",
+    "platform"
+  ],
+  "metadata": {
+    "source": "app-hosting-service/mcp-server/skillset/dibbla-platform",
+    "sourceVersion": "1.0.0",
+    "sourceDigest": "sha256:dc705685f321e53738323892c3a10d340dc741bcdd2fd01644e57ba2c4cee2a1",
+    "generator": "app-hosting-service/mcp-server/connectorpkg"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "_comment": "Generated. Every file below is produced from the source named here; packageDigest covers all of them and is what two runs on one source must agree on.",
+  "generator": "app-hosting-service/mcp-server/connectorpkg",
+  "source": "app-hosting-service/mcp-server/skillset/dibbla-platform",
+  "sourceVersion": "1.0.0",
+  "sourceDigest": "sha256:dc705685f321e53738323892c3a10d340dc741bcdd2fd01644e57ba2c4cee2a1",
+  "packageDigest": "sha256:2a3920150a66ef162f758bd172688150bbad0bb42e07f889ab301034b209819c",
+  "files": [
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "digest": "sha256:c59d849154a3431b099e186f91a7cfe5fb19c30ae2c672131cae9420aa12b2ca",
+      "bytes": 1202
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "digest": "sha256:f97dcb69c10f672a660744c112f8229304dcf89d24e62182e8007294e15621e5",
+      "bytes": 858
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "digest": "sha256:79cad4449c212a1225db1403e5fc8b14743524de7689867b28ffa8eb7bb80efc",
+      "bytes": 2107
+    },
+    {
+      "path": ".mcp.json",
+      "digest": "sha256:1c7312fee3ca47cff46e485fea7bb82d5a56db36db7ab24e62261a6f97b9cd37",
+      "bytes": 399
+    },
+    {
+      "path": "README.md",
+      "digest": "sha256:1418e4251af18fab45c87120c1dc9f3bbdf3e4727abd0489d2b9ef4e2873976d",
+      "bytes": 2726
+    },
+    {
+      "path": "SETUP.md",
+      "digest": "sha256:265a52f72517a7ef6f9cb2db715efbe34e744ca5fd21beffee514a91a4d806c4",
+      "bytes": 4295
+    },
+    {
+      "path": "commands/connect.md",
+      "digest": "sha256:31f9302c4194e3a78612c9186e5b5edbfcb7c056151c6401bc31c2d78f143f0d",
+      "bytes": 1961
+    },
+    {
+      "path": "commands/deploy.md",
+      "digest": "sha256:3f951bb00c811c64f2fb8cceb64fead458383a03d5a27143767bbd72a7203e25",
+      "bytes": 2799
+    },
+    {
+      "path": "skills/dibbla-platform/SKILL.md",
+      "digest": "sha256:a0c7a63965c46e179705ac9b527cadf9cad6f960853693b08c9a3110445f3be3",
+      "bytes": 12197
+    },
+    {
+      "path": "skills/dibbla-platform/reference/cli-boundary.md",
+      "digest": "sha256:71ccefc52c182e4f2d2a4f800645b567730a722fbfb2789872442c64834a78d1",
+      "bytes": 4855
+    },
+    {
+      "path": "skills/dibbla-platform/reference/connect.md",
+      "digest": "sha256:4db6654ee17cb3381b07b4eef2d8685d96a7dac95fa5cc4cd19007f2ee947dcf",
+      "bytes": 8740
+    },
+    {
+      "path": "skills/dibbla-platform/reference/data.md",
+      "digest": "sha256:3b954a070af4bf72f6da5df48214816a9f44d264929f4d3c15d98c6d1c53beb9",
+      "bytes": 4364
+    },
+    {
+      "path": "skills/dibbla-platform/reference/deploy.md",
+      "digest": "sha256:231beeb5a15291e7225a1ed6d670f9e8ae5f8f3f490d892147d5349440a5bad0",
+      "bytes": 7669
+    },
+    {
+      "path": "skills/dibbla-platform/reference/destructive.md",
+      "digest": "sha256:0849c095aa48ad60aa232932e0df4b98c2598bc1d03cdac2b9566db0bcc69284",
+      "bytes": 3259
+    },
+    {
+      "path": "skills/dibbla-platform/reference/operations.md",
+      "digest": "sha256:ac6ba7df2417cb3debe801b6bb313fa0d53e57bc3ad864b504b33fb171040271",
+      "bytes": 5528
+    },
+    {
+      "path": "skills/dibbla-platform/reference/workflows.md",
+      "digest": "sha256:6e2fa3d37c82ba1bc177b13f47da6cae2bd9c285001f089f59bd58c69f9d19bb",
+      "bytes": 3807
+    },
+    {
+      "path": "skills/dibbla-setup/SKILL.md",
+      "digest": "sha256:ea17a8388fdcb63892e24ba03a86ce24265b25f3ae1d6786da299cdae34d7516",
+      "bytes": 4655
+    }
+  ]
+}
