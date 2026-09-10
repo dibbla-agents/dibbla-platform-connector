@@ -9,7 +9,7 @@ This file is generated from the Dibbla connector skill source. Do not edit it by
 hand: edit the source and regenerate, or your change is gone at the next release.
 source: app-hosting-service/mcp-server/skillset/dibbla-platform
 source-version: 1.0.0
-source-digest: sha256:596c9d3da59ef8cb0e763b373c3b2e1399ecb6586cffe64baa0c7791079c8b08
+source-digest: sha256:b712061da97e82b2f5ea7725ed593241665aa788144b87d3895b881f12f78fa9
 generator: app-hosting-service/mcp-server/connectorpkg
 -->
 # Dibbla over the connector
@@ -98,7 +98,7 @@ when the organization requires review.
 
 ## Show the app; never wait to be asked
 
-The person should never have to ask for the preview, and should never learn the
+The person should never have to ask to see their app, and should never learn the
 name of a tool to get it. `platform_app_card` is how an application appears in
 the conversation: its name, its address, whether it is live, and — when you pass
 the `operation_id` of the deploy that is producing it — that deploy's steps,

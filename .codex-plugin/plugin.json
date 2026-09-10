@@ -29,7 +29,7 @@
     "websiteURL": "https://dibbla.com",
     "privacyPolicyURL": "https://dibbla.com/privacy",
     "termsURL": "https://dibbla.com/terms",
-    "supportURL": "https://dibbla.com/support",
+    "supportURL": "https://docs.dibbla.com/support/",
     "defaultPrompt": [
       "Which Dibbla organization am I connected as, and what can this connection do?",
       "List my Dibbla apps and tell me which ones are not running.",
@@ -40,7 +40,7 @@
   "metadata": {
     "source": "app-hosting-service/mcp-server/skillset/dibbla-platform",
     "sourceVersion": "1.0.0",
-    "sourceDigest": "sha256:596c9d3da59ef8cb0e763b373c3b2e1399ecb6586cffe64baa0c7791079c8b08",
+    "sourceDigest": "sha256:b712061da97e82b2f5ea7725ed593241665aa788144b87d3895b881f12f78fa9",
     "generator": "app-hosting-service/mcp-server/connectorpkg"
   }
 }
