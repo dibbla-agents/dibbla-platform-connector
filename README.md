@@ -58,5 +58,3 @@ contact@dibbla.com · https://dibbla.com/terms · https://dibbla.com/privacy
 ---
 
 Connector contract version 1.0.0.
-
-Hand-edited to prove the gate (DIB-775).
