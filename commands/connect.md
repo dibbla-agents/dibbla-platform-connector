@@ -7,7 +7,7 @@ This file is generated from the Dibbla connector skill source. Do not edit it by
 hand: edit the source and regenerate, or your change is gone at the next release.
 source: app-hosting-service/mcp-server/skillset/dibbla-platform
 source-version: 1.0.0
-source-digest: sha256:dc705685f321e53738323892c3a10d340dc741bcdd2fd01644e57ba2c4cee2a1
+source-digest: sha256:596c9d3da59ef8cb0e763b373c3b2e1399ecb6586cffe64baa0c7791079c8b08
 generator: app-hosting-service/mcp-server/connectorpkg
 -->
 Connect the Dibbla connector and verify it, then tell the person plainly what

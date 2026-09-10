@@ -21,7 +21,7 @@
   "metadata": {
     "source": "app-hosting-service/mcp-server/skillset/dibbla-platform",
     "sourceVersion": "1.0.0",
-    "sourceDigest": "sha256:dc705685f321e53738323892c3a10d340dc741bcdd2fd01644e57ba2c4cee2a1",
+    "sourceDigest": "sha256:596c9d3da59ef8cb0e763b373c3b2e1399ecb6586cffe64baa0c7791079c8b08",
     "generator": "app-hosting-service/mcp-server/connectorpkg"
   }
 }
