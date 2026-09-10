@@ -1,0 +1,23 @@
+name: Generated content
+
+# This repository is distribution-only: every file in it is written by
+# app-hosting-service/mcp-server/connectorpkg out of the Dibbla connector skill
+# source, and Anthropic's directory mirrors it automatically. A hand-edit would
+# therefore reach users and then vanish at the next release. This job is the
+# step that says so — it fails when a file does not match the generator's
+# output recorded in SOURCE.json.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    name: Files match the generator's output
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify against SOURCE.json
+        run: python3 .github/verify_generated.py .
